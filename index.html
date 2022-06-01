@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href ="style.css" >
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Сайт</title>
+	<script>
+   function isEmail() {
+    var str = document.getElementById("email").value;
+    var status = document.getElementById("status");
+    var re = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+    if (re.test(str)) status.innerHTML = "Сообщение отправлено";
+      else status.innerHTML = "Почта неверная";
+    if(isEmpty(str)) status.innerHTML = "Поле пустое";
+   }
+   function isEmpty(str){
+    return (str == null) || (str.length == 0);
+   }
+  </script>
+
+  </head>
+  <body class = "Ocn">
+  <div class="top">
+  <div class="container">
+    
+	   <!-- HEADER -->
+      <header>
+      <div class= "Global">
+	       Сайт по просмотру аниме онлайн
+	  </div>
+      </header> 
+  
+      <!-- NAV #1 -->
+        <nav>
+         <ul class="nav justify-content-center Menu">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Жанры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Онгоинги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Анонсы</a>
+            </li>
+         </ul>
+        </nav>
+  </div>
+</div>
+<main>
+<div class="container ">
+     <img src="Для главного.jpg" class = "paint w-100 mt-1">
+    <div class="row mt-1 mb-5">
+	    <div class="col-6">
+		    <div class="text-center p-3" style="background-color:#ED9494; border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw;">
+				<form>
+				    <h5 class="mb-4" style = "font-size: 2vw" >Личный кабинет</h5>
+                    <div class="form-group">
+                        <input type="email" class="form-control" style="border-color:#FF0000; border-width: 0.2vw; border-radius:2.5vw; font-size: 1vw" id="exampleInputEmail1" placeholder="Почта">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" style="border-color:#FF0000; border-width: 0.2vw; border-radius:2.5vw; font-size: 1vw" id="exampleInputPassword1" placeholder="Введите пароль">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color:#ffffff; color:#000000; border-color:#FF0000; border-width: 0.2vw; border-radius:2.5vw; text-decoration: underline; font-size: 1vw">Войти</button>
+				
+				</form>
+			<p class="text-uppercase font-weight-bold mt-3" style="font-size:1vw;">У вас ещё нет аккаунта? Тогда создай его!</p>
+			<button class="btn btn-danger" data-toggle="modal" data-target="#myModal" style="font-size:1vw;">Регистрация</button>
+                <div id = "myModal" class="modal fade"> 
+				     <div class = "modal-dialog">
+					     <div class = "modal-content"> 
+					         <div class = "modal-header">
+							     <h4 class = "modal-title">Окно</h4>
+							     <button class = "close" data-dismiss = "modal"> x </button>
+							 </div>
+							 <div class = "modal-body"> <form action="">
+								<p>Введите адрес электронной почты</p>
+								<p><input type="text" id="email"> <span id="status"></span></p>
+								<p><input type="button" value="Отправить" onclick="isEmail()"></p>
+								</form>
+							 </div>
+					     </div>
+				     </div>
+     			</div>
+			</div>           		
+		</div>
+	    <div class="col-6">
+		    <div class="text-center p-3" style="background-color:#ED9494; border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; font-size:3vw;">
+				Здесь моглы быть ваша реклама!
+			</div>	
+		</div> 
+	</div>
+	<h2 class="text-center mt-5" style="background-color:#ED9494; border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; font-size:2vw; width: 25vw; height: 4.5vw; padding: 1vw;"> Арты наших фанатов </h2>
+	<div class="row">
+        <div class="col-3"><img src="Рис1.jpg" style="width: 20vw; padding-top: 1.5vw; height: 35vw; background-size: cover;"></div>
+		<div class="col-9"><img src="Рис2.jpg" style="width: 49.7vw; padding-left: 20px; padding-top: 1.5vw;height 35vw; background-size: cover;"></div> 
+		<div class="w-100"></div>
+        <div class="col-12"><img src="Рис3.png" style="width: 68.7vw; padding-top: 5px; height: 30vw; background-size: cover;"> </div>
+    </div>
+</div>
+<div class="container-fluid"> 
+    <div class="text-center gr" style="font-size: 2vw; margin-top: 5vw; padding: 5vw; background-color:#A46F6F; color:#333333;"> Ссылка на нашу группу: <a href="#">vk/1212ewwqe2 </a> </div>
+    <div class="text-center main-log"> САМЫЕ ПРОСМАТРИВАЕМЫЕ АНИМЕ </div>
+	<div class="row justify-content-around">
+	    <div class="col-5" style="margin: 2vw;">
+		<div class="row" style="border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; ">
+            <div class="col-4">
+			<img src="naruto.jpg" style="border-radius:2.5vw; width: 14vw; padding: 1vw; padding-left: 0;"> 
+			<button class="btn btn-danger" data-toggle="modal" data-target="#Modal1" style="font-size:0.8vw; margin-top: 1vw; margin-left: 2vw;">Полное описание</button>
+			<div id = "Modal1" class="modal fade"> 
+				     <div class = "modal-dialog">
+					     <div class = "modal-content"> 
+					         <div class = "modal-header">
+							     <h4 class = "modal-title">Описание</h4>
+							     <button class = "close" data-dismiss = "modal"> x </button>
+							 </div>
+							 <div class = "modal-body"> 
+							    Прошло не мало времени после того как Джирая-сэнсэй взял юного Наруто под свое крыло. На целых два года они покинули родную деревню. Джирая-сэнсэй собирал различную информацию об Акацуке, а так же создавал свой новый роман. Наруто совершенствовался как ниндзя, углубляясь в изучение нинджутсу и тайджутсу. Теперь они возвращаются в деревню, к близким друзьям. В деревни тоже все поменялось. Лицо бабули Цунаде высекли на склоне горы, так как она была пятой хокагэ. Все одноклассники Наруто стали отличными шиноби и уже давно получили звание Чунины. Гаара уже стал полноценным Казэкагэ и управлял деревней скрытой в песке.
+                                Но несмотря на все эти хорошие новости, в мире Наруто осталось еще множество не решенных загадок и проблема. Организация Акацуки начинают активные действие. Они задумали какой-то план и для его совершения им необходимо отловить всех Джинчурики (человек в котором запечатан один из 9 хвостатых зверей). Наруто сам является Джинчурики, поэтому попадает в этот список. Саске убежал из деревни и до сих пор не вернулся. Наруто решительно хочет вернуть своего друга, пока Орочимару не завладел его телом, но у Саске на уме только месть и он жаждет убить своего брата. Вообще много новых историй, сражений и героев ожидают нас в продолжениеAпоистине культового аниме Наруто: Ураганные Хроники (Naruto Shippuuden).							
+							</div>
+					     </div>
+				     </div>
+     			</div>
+			</div>
+			<div class="col-8" style="margin-top: 1vw; color:#000000; ">
+			<div class="text-uppercase" style="font-weight: 500; font-size: 1.2vw;">Название: Наруто угарные хроники</br>
+               Год выхода: 2007</br>
+               Жанр: приключения, фэнтези </br>
+               Количество серий: 500 (25 мин.)</br>
+			</div>
+			<div style="font-size: 1vw;"><span class="text-uppercase">Описание:</span> Прошло не мало времени после того как Джирая-сэнсэй взял юного Наруто под свое крыло. 
+			На целых два года они покинули родную деревню. Джирая-сэнсэй собирал различную информацию об Акацуке, а так же создавал свой новый роман. 
+			Наруто совершенствовался как ниндзя, углубляясь в изучение нинджутсу и тайджутсу. Теперь они возвращаются в деревню, к близким друзьям. В деревни тоже все поменялось. 
+			Лицо бабули Цунаде высекли на склоне горы, так как она была пятой хокагэ. Все одноклассники Наруто стали отличными шиноби и уже давно...
+			
+		    </div>
+			</div>
+		</div>
+		</div>
+		<div class="col-5" style="margin: 2vw;">
+		<div class="row" style="border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; ">
+            <div class="col-4">
+			<img src="Аниме2.jpg" style="border-radius:2.5vw; width: 14vw; padding: 1vw; padding-left: 0;"> 
+			<button class="btn btn-danger" data-toggle="modal" data-target="#Modal2" style="font-size:0.8vw; margin-top: 1vw; margin-left: 2vw;">Полное описание</button>
+			<div id = "Modal2" class="modal fade"> 
+				     <div class = "modal-dialog">
+					     <div class = "modal-content"> 
+					         <div class = "modal-header">
+							     <h4 class = "modal-title">Описание</h4>
+							     <button class = "close" data-dismiss = "modal"> x </button>
+							 </div>
+							 <div class = "modal-body"> 
+							    Профессиональная реализация выступает едва ли не одним из важнейших аспектов в жизни человека. Нередко она становится тяжким испытанием, а порой и вовсе непосильной ношей. Одному человеку приходится столкнуться не просто с профессиональным выгоранием, а полнейшим опустошением от деятельности, которой посвятил сознательную жизнь. Он был прирожденным убийцей и его, как ассасина нещадно эксплуатировали хозяева. Он немалое количество людей отправил на тот свет, и в один момент решил остановиться. Он не смел рассчитывать на искупление своих деяний, но более так не мог продолжать.
+					            Он проходит и сам через смерть. Третьи персоны не пожелали даровать возможности ассасину, ставшему бывшим, права на спокойную жизнь. Только он не умер, а возродился. Все это произошло благодаря вмешательству одной богини. Герой не ожидал, что кто-то может встать на его сторону, и был благодарен за это, а вот тело, в котором ему предстоит ныне жить, несколько озадачивает бывалого убийцу. Он стал молодым и красивым, а ведь до смерти был уже довольно зрелым человеком. На этом сюрпризы не завершатся. И самое главное, что теперь перерожденной особе придется заниматься борьбой с непростым врагом.
+							</div>
+					     </div>
+				     </div>
+     			</div>
+			</div>
+			<div class="col-8" style="margin-top: 1vw; color:#000000; ">
+			<div class="text-uppercase" style="font-weight: 500; font-size: 1.2vw;">Название: Перерождение ассасина</br>
+            Год выхода: 2021</br>
+            Жанр: приключения, фэнтези</br>
+            Количество серий: 12 (25 мин.)</br>
+			</div>
+			<div style="font-size: 1vw;"><span class="text-uppercase">Описание:</span> Профессиональная реализация выступает едва ли не одним из важнейших аспектов в жизни человека. 
+			Нередко она становится тяжким испытанием, а порой и вовсе непосильной ношей. 
+			Одному человеку приходится столкнуться не просто с профессиональным выгоранием, а полнейшим опустошением от деятельности, которой посвятил сознательную жизнь. 
+			Он был прирожденным убийцей и его, как ассасина нещадно эксплуатировали хозяева. Он немалое количество людей отправил на тот свет, и в один момент решил остановиться. 
+			Он не смел рассчитывать на...
+		    </div>
+			</div>
+		</div>
+		</div>
+    </div>
+	<div class="row justify-content-around">
+	    <div class="col-5" style="margin: 2vw;">
+		<div class="row" style="border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; ">
+            <div class="col-4">
+			<img src="anim.jpg" style="border-radius:2.5vw; width: 14vw; padding: 1vw; padding-left: 0;"> 
+			<button class="btn btn-danger" data-toggle="modal" data-target="#Modal2" style="font-size:0.8vw; margin-top: 1vw; margin-left: 2vw;">Полное описание</button>
+			<div id = "Modal2" class="modal fade"> 
+				     <div class = "modal-dialog">
+					     <div class = "modal-content"> 
+					         <div class = "modal-header">
+							     <h4 class = "modal-title">Описание</h4>
+							     <button class = "close" data-dismiss = "modal"> x </button>
+							 </div>
+							 <div class = "modal-body"> 
+							    Первенство для подростков крайне важно. Оно дает уважение среди сверстников и придает ещё большей привлекательности в глазах противоположного пола. Для ребят, по своему уровню интеллекта относящегося к разряду гениев снискать признание не так уж сложно. Но это только кажется, что после обозначения гения к его ногам падут почитатели и любовь нагрянет безо всяких усилий. В Академии Сюити, считавшейся престижной, учились действительно примечательные по своему интеллекту подростки. Практически каждый ученик был талантлив. Но даже среди гениев имелись ещё большие гении.						
+							    Шиномия Кагуя и Широганэ Миюки ворвались в пласт академического общества, доступный не просто для интеллектуалов, а для тех, кто имел право считаться элитой. Гении возглавили студенческий совет, но не сумели достичь взаимопонимания. Они были теми, на кого взирали кто с уважением, кто с завистью. Им были безразличны чужие чувства. Шиномия и Широганэ были влюбленными друг в друга. Они не могли позволить себе роскошь любить. Они испытывали странную потребность бороться друг с другом. А виной всему была гордость. Оба были в избытке наделены этим вроде бы неплохим качеством, но неверно его применили.
+							</div>
+					     </div>
+				     </div>
+     			</div>
+			</div>
+			<div class="col-8" style="margin-top: 1vw; color:#000000; ">
+			<div class="text-uppercase" style="font-weight: 500; font-size: 1.2vw;">НАЗВАНИЕ: Госпожа Кагуя: в любви как на войне</br>
+            Год выхода: 2007</br>
+            Жанр: приключения, боевые искусства, сёнэн</br>
+            Количество серий: 500 (25 мин.)</br>
+			</div>
+			<div style="font-size: 1vw;"><span class="text-uppercase">Описание:</span> Первенство для подростков крайне важно. 
+			Оно дает уважение среди сверстников и придает ещё большей привлекательности в глазах противоположного пола. Для ребят, по своему уровню интеллекта относящегося к разряду гениев снискать признание не так уж сложно. 
+			Но это только кажется, что после обозначения гения к его ногам падут почитатели и любовь нагрянет безо всяких усилий. 
+			В Академии Сюити, считавшейся...
+		    </div>
+			</div>
+		</div>
+		</div>
+		<div class="col-5" style="margin: 2vw;">
+		<div class="row" style="border-style: solid; border-color:#FF0000; border-width: 0.2vw; border-radius:2vw; ">
+            <div class="col-4">
+			<img src="anim1.jpg" style="border-radius:2.5vw; width: 14vw; padding: 1vw; padding-left: 0;"> 
+			<button class="btn btn-danger" data-toggle="modal" data-target="#Modal3" style="font-size:0.8vw; margin-top: 1vw; margin-left: 2vw;">Полное описание</button>
+			<div id = "Modal3" class="modal fade"> 
+				     <div class = "modal-dialog">
+					     <div class = "modal-content"> 
+					         <div class = "modal-header">
+							     <h4 class = "modal-title">Описание</h4>
+							     <button class = "close" data-dismiss = "modal"> x </button>
+							 </div>
+							 <div class = "modal-body"> 
+							  Шпион, носивший позывной «Сумрак» и прослывший гениальностью и хладнокровием, привык исполнять порученные ему задания, безукоризненно и не создавая шума. Ему нравилась его работа, ведь с юных лет он грезил о том, чтобы мир стал намного лучше, а без персонального участия этого не добиться. Безо всякого страха он брался за опасные задания, не опасаясь распрощаться с жизнью. В очередной раз ему дают серьезное задание, но требуется выполнить ряд условий, а они достаточно специфичны. От шпиона требуется завести семью и быть заботливым отцом для девочки Ани.
+                              Малышка оказалась обладательницей крайне сложного характера, что поставило в тупик «Сумрака», которого ныне стали величать Ллоидом Фолджером. Но отказываться от миссии шпион точно не станет и берется штудировать книги по психологии, дабы найти подход к сложному ребенку. Девочка с легкость вошла в роль дочурки, и радуется возможности общения с отцом, пусть даже тот и не настоящий. Имеется в семье и мама, роль которой исполняет киллерша Йор Брайер. Жизнь шпиона и киллерши становится все более схожей на ту, какую ведут обычные люди, и немаловажную роль в этом сыграла Аня. Девочка делает так, чтобы её родители были вместе.
+							 </div>
+					     </div>
+				     </div>
+     			</div>
+			</div>
+			<div class="col-8" style="margin-top: 1vw; color:#000000; ">
+			<div class="text-uppercase" style="font-weight: 500; font-size: 1.2vw;">нАЗВАНИЕ: сЕМЬЯ ШПИОНОВ</br>
+            Год выхода: 2022</br>
+            Жанр: сёнэн, комедия</br>
+            Количество серий: 12+ (25 мин.)</br>
+			</div>
+			<div style="font-size: 1vw;"><span class="text-uppercase">Описание:</span> Шпион, носивший позывной «Сумрак» и прослывший гениальностью и хладнокровием, привык исполнять порученные ему задания, 
+			безукоризненно и не создавая шума. Ему нравилась его работа, ведь с юных лет он грезил о том, чтобы мир стал намного лучше, а без персонального участия этого не добиться. 
+			Безо всякого страха он брался за опасные задания, не опасаясь распрощаться с жизнью. В очередной раз ему дают серьезное задание, но требуется выполнить ряд условий, а они достаточно специфичны. 
+			От шпиона требуется завести семью и быть заботливым...
+
+		    </div>
+			</div>
+		</div>
+		</div>
+    </div>
+	<div style="background-color: #CF7676; height: 10vw; margin-top: 2vw; margin:0;"> </div>
+</div>
+</main>
+<footer style="background-color: #CF7676; height: 10vw; margin-top: 2vw;">
+    
+</footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
